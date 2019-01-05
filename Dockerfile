@@ -9,7 +9,7 @@ RUN apt-get -y update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Install OpenVino
-RUN wget -O /tmp/openvino.tar.gz http://registrationcenter-download.intel.com/akdlm/irc_nas/14920/l_openvino_toolkit_p_2018.4.420_online.tgz \
+RUN wget -O /tmp/openvino.tar.gz http://registrationcenter-download.intel.com/akdlm/irc_nas/15013/l_openvino_toolkit_p_2018.5.445_online.tgz \
     && tar -xzf /tmp/openvino.tar.gz -C /tmp \
     && rm /tmp/openvino.tar.gz \
     && cd /tmp/l_openvino_*_online \
